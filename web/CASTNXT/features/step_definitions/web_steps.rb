@@ -28,5 +28,9 @@ Then /^I should see the form$/ do
 end
 
 When /^I click on a form in the list$/ do
-  
+  #based on implementation
+end
+
+When /^I go to the profile page$/ do
+  visit('users/profile')
 end
