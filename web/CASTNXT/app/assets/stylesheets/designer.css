@@ -1,0 +1,80 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+#content {
+    height: 100%;
+}
+#left {
+    float: left;
+    width: 40%;
+    background: white;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    <!-- display: flex; -->
+    justify-content: center;
+    align-items: center;
+}
+.l1{
+    height: 40%;
+    padding-left: 15px;
+}
+
+.l2{
+    position: absolute;
+    top:60%;
+    height: 40%;
+    width: 40%;
+    padding-left: 15px;
+}
+#right1 {
+    float: left;
+    width: 60%;
+    background: white;
+    height: 40%;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 5px;
+}
+#right2 {
+    float: left;
+    width: 60%;
+    background: white;
+    height: 40%;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.heading {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 3vw;
+    padding-left: 15px;
+}
+.headings {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 1vw;
+    padding-left: 5px;
+}
+.bodytext {
+    font-family: 'Montserrat', cursive;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 200px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
