@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   get 'users/signup'
   get 'users/designers'
   get 'users/admin'
-  get 'users/payment'
+  get 'users/register'
+  get 'users/index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'users#home'
 end
