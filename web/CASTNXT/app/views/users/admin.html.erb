@@ -1,15 +1,34 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+  </head>
 <body class="bodytext">
-<h1 class="heading">Users#admin</h1>
-<p style="padding-left:25px;">Find me in app/views/users/admin.html.erb</p>
-<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<link rel="stylesheet" href="admin.css">
-<table>
-    <tr>
-        <td class="left"><b>View All Performers</b></td>
-        <td class="right">
-            <p class="r1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec lorem mauris. Nulla fermentum tincidunt nulla et dignissim. In porttitor sem id velit lobortis aliquam.
+<div class="sidebar">
+    <nav>
+      <div>
+        <input type="button" id = "perfButton" value="Performers" class="btn btn-secondary btn-lg btn-block btn-dark"/>
+      </div>
+      <div>
+        <input type="button" id = "stacksButton" value="Stacks" class="btn btn-secondary btn-lg btn-block btn-dark"/>
+      </div>
+      <div>
+        <input type="button" id = "curatedStacksButton" value="Curated" class="btn btn-secondary btn-lg btn-block btn-dark"/>
+      </div>
+      <div>
+        <input type="button" id = "finalListButton" value="Final List" class="btn btn-secondary btn-lg btn-block btn-dark"/>
+      </div>
+      
+    </nav>
+  </div>
+  <div class="body-text">
+    <h1 class="heading">Users#admin</h1>
+    <div id="right1" class="show">
+    <p class="r1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec lorem mauris. Nulla fermentum tincidunt nulla et dignissim. In porttitor sem id velit lobortis aliquam.
               <ul>
                 <li>1</li>
                 <li>2</li>
@@ -22,12 +41,9 @@
                 <li>9</li>
               </ul>
              </p>
-        </td>
-    </tr>
-    <tr>
-        <td class="left"><b>Stacks</b></td>
-        <td class="right">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p><p>Fusce nec lorem mauris. Nulla fermentum tincidunt nulla et dignissim.</p>
+    </div>
+    <div id="right2" class="hidden1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p><p>Fusce nec lorem mauris. Nulla fermentum tincidunt nulla et dignissim.</p>
               <br/>
               <div class="card">
                 <div class="container">
@@ -42,12 +58,9 @@
                   <p><a href="">Click to expand</a></p>
                 </div>
               </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="left"><b>Curated Stacks</b></td>
-        <td class="right">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p><p>Fusce nec lorem mauris. Nulla fermentum tincidunt nulla et dignissim.</p>
+    </div>
+    <div id="right3" class="hidden2">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p><p>Fusce nec lorem mauris. Nulla fermentum tincidunt nulla et dignissim.</p>
               <br/>
               <div class="card">
                 <div class="container">
@@ -62,12 +75,9 @@
                   <p><a href="">Click to expand</a></p>
                 </div>
               </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="left"><b>Final List</b></td>
-        <td class="right">
-            <p class="r1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec lorem mauris. Nulla fermentum tincidunt nulla et dignissim. In porttitor sem id velit lobortis aliquam.
+    </div>
+    <div id="right4" class="hidden3">
+      <p class="r1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec lorem mauris. Nulla fermentum tincidunt nulla et dignissim. In porttitor sem id velit lobortis aliquam.
               <ul>
                 <li>1</li>
                 <li>2</li>
@@ -80,9 +90,47 @@
                 <li>9</li>
               </ul>
              </p>
-        </td>
-    </tr>
-</table>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script>
+  $(function () {
+
+$('#perfButton').click(function () {
+
+$('.show').show();
+$('.hidden1').hide();
+$('.hidden2').hide();
+$('.hidden3').hide();
+
+});
+$('#stacksButton').click(function () {
+
+$('.show').hide();
+$('.hidden1').show();
+$('.hidden2').hide();
+$('.hidden3').hide();
+});
+$('#curatedStacksButton').click(function () {
+
+$('.show').hide();
+$('.hidden1').hide();
+$('.hidden2').show();
+$('.hidden3').hide();
+});
+$('#finalListButton').click(function () {
+
+$('.show').hide();
+$('.hidden1').hide();
+$('.hidden2').hide();
+$('.hidden3').show();
+});
+});
+</script>
 </body>
 </html>
 
